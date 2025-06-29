@@ -1,24 +1,499 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Sesión 11 3º Secundaria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 11 3º Secundaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes aprendan a interactuar con un sensor RFID (Identificación por Radiofrecuencia) para la identificación única de objetos.</li>
+                                        <li>Que sean capaces de enviar estos identificadores únicos a la nube (SmartIOT.space) para sistemas de trazabilidad y gestión de inventarios.</li>
+                                        <li>Que conceptualicen cómo la Inteligencia Artificial utiliza la información de identificación única y la trazabilidad para la optimización logística (predicción de rutas, gestión de stock) y la detección de anomalías en cadenas de suministro complejas.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡A.I. GYM:</strong> Análisis profundo y contextualización de la misión con Xolo.</li>
+                                        <li><strong class="tactic-highlight">⚡VIBE CODING:</strong> Diseño de la intención y generación de código por IA.</li>
+                                        <li><strong class="tactic-highlight">⚡ANÁLISIS DE CÓDIGO:</strong> Lectura y comprensión guiada del código generado ("Taming the Genie").</li>
+                                        <li><strong class="tactic-highlight">⚡IMPLEMENTACIÓN Y DEBUGGING:</strong> Pruebas de hardware/software y depuración colaborativa con Xolo.</li>
+                                        <li><strong class="tactic-highlight">⚡GNIUS STORM:</strong> Showcase de proyectos, síntesis de "insights" y reflexión iterativa.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un Micro:bit con IOTbit y lector RFID configurado para leer identificadores únicos (UIDs) de etiquetas, enviar estos UIDs a SmartIOT.space (o ThingSpeak) para trazabilidad, y conceptualización del rol de la IA en la optimización logística y detección de anomalías.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable y de buena velocidad.</li>
+                                        <li>Cuentas de alumno para ThingSpeak (SmartIOT.space).</li>
+                                        <li>Chat "Agente Gnius" (Xolo) operativo.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-10).</li>
+                                        <li>1 Micro:bit v2 con placa IOTbit y cable USB por equipo de 2 estudiantes.</li>
+                                        <li>1x lector RFID (ej. RC522) por equipo.</li>
+                                        <li>2-3x etiquetas RFID compatibles (tarjetas/llaveros).</li>
+                                        <li>Archivo de librería `mfrc522.py` (para MakeCode/MicroPython).</li>
+                                        <li>SSID y Password de la red Wi-Fi de la clase.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión del Entorno Digital y Físico (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet y funcionamiento de MakeCode (Python editor).</li>
+                                                <li>Tener kits Micro:bit v2 con IOTbit y lectores RFID/etiquetas listos.</li>
+                                                <li>Asegurarse de que el archivo `mfrc522.py` esté disponible y cargado en los Micro:bits.</li>
+                                                <li>Tener la presentación de diapositivas (1-10) lista y en orden.</li>
+                                                <li>Probar el chat "Agente Gnius" (Xolo) para asegurar su operatividad.</li>
+                                                <li>Tener las credenciales (SSID y Password) de la red Wi-Fi de la clase listas.</li>
+                                                <li>Asegurarse de que SmartIOT.space (o ThingSpeak) esté accesible y funcional, con un campo de datos configurado para recibir strings (texto).</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización Conceptual y Técnica:</strong>
+                                            <ul>
+                                                <li>Revisar el flujo de esta sesión, enfocándose en RFID, protocolo SPI, identificación única (UID), trazabilidad, gestión de estado (`uid_leido_anteriormente`) y optimización logística con IA.</li>
+                                                <li>Comprender el código Python de ejemplo generado por Xolo para esta misión, incluyendo la comunicación SPI.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Preparación de la Demostración Práctica:</strong>
+                                            <ul>
+                                                <li>Tener un Micro:bit con IOTbit y lector RFID programado para leer UIDs y enviarlos a SmartIOT.space, demostrando la detección única de eventos, para una demostración inicial si es necesario.</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
+                <p>Establecer el tono profesional, activar la personalización de la IA y presentar la misión del día.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida e Introducción a la Misión</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta el enfoque estratégico de la misión del día.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Buenos días, equipo. Han monitoreado diversas variables. Hoy, un paso crucial: la **identificación de objetos y la logística**. Imaginen un almacén o biblioteca: ¿cómo sabemos dónde está cada artículo? La respuesta es la identificación única. Su Micro:bit será un 'lector de identidad' para objetos. Iniciaremos esta misión de 'trazabilidad inteligente'."</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación y Personalización de Xolo</h3>
+                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo **individual**, proporcionando a Xolo la información necesaria para la personalización.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Para iniciar, de forma **individual**, abran su interfaz de Xolo y salúdenlo. Incluyan su **perfil de aprendizaje** y un **interés personal actual**. Ejemplo: <strong>'Hola Xolo, soy [Tu Nombre], perfil [Navigator], y pienso en cómo Amazon gestiona inventarios masivos. Listo.'</strong> Confirmen haber recibido su saludo."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 7 minutos</h2>
+                <p>Clarificar las metas de aprendizaje y presentar el desafío técnico y conceptual del día.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presentación del Desafío Conceptual y Técnico</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador introduce el concepto o la herramienta central de la sesión, contextualizando su relevancia profesional.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Hoy sus Micro:bits identificarán objetos de forma única. Aprenderán a usar un sensor RFID. Enviarán identificadores únicos a la nube para trazabilidad y gestión de inventarios. Conceptualizaremos cómo la IA usa esta información para optimizar logística (predicción de rutas, stock) y detectar anomalías en cadenas de suministro. Esto es crucial para la autenticación multifactor o la visibilidad de la cadena de valor."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: "I Can Statement"</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje de la sesión en un formato claro y orientado a la competencia.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Al finalizar, podrán: <strong>'Interactuar con un sensor RFID para identificación única de objetos, enviar UIDs a la nube para trazabilidad y gestión de inventarios, y conceptualizar cómo la IA usa esta información para optimización logística y detección de anomalías.'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM (Aprendizaje Individual) ⏰ 10 minutos</h2>
+                <p>Facilitar un aprendizaje personalizado e individual con Xolo para comprender sensores RFID, identificación única en la nube y optimización logística con IA.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Instrucción para el Aprendizaje Estratégico</h3>
+                            <p>(Proyectar Diapositiva 5) El facilitador dirige a los alumnos para que inicien su aprendizaje **individual** con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Iniciamos el A.I. GYM. De forma **individual**, formulen a Xolo: <strong>'Xolo, explícame cómo funcionan los sensores RFID para identificación única. ¿Por qué es crucial enviar UIDs a la nube para logística y trazabilidad? ¿Cómo la IA usa estos datos para optimizar rutas, gestionar inventarios y detectar anomalías en la cadena de suministro?'</strong> Presten atención a la unicidad del ID y las aplicaciones de IA."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Análisis y Profundización Conceptual</h3>
+                            <p>(Proyectar Diapositiva 6) El facilitador modera una breve discusión grupal para sintetizar los hallazgos individuales del A.I. GYM y propone preguntas para que los alumnos profundicen con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Ahora, analicen las explicaciones de Xolo. Si algo no les queda claro, pídanle que profundice. Por ejemplo: <strong>'Xolo, ¿qué es un UID y por qué es único globalmente?'</strong> o <strong>'¿Cómo el RFID se compara con códigos de barras?'</strong> Pregunten: <strong>'¿Cómo la IA predice la demanda futura de stock y automatiza pedidos con datos RFID?'</strong> El objetivo es comprender cómo la RFID y la IA transforman la logística."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark (Trabajo en Equipo) ⏰ 22 minutos</h2>
+                <p>El facilitador supervisa la ejecución del "Flujo de Creación Aumentada" en equipos, desde el diseño hasta la implementación.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Formación de Equipos e Instrucción</h3>
+                            <p>(Proyectar Diapositiva 7) El facilitador instruye a los alumnos a formar sus equipos de trabajo para el resto de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Han comprendido cómo los identificadores únicos impulsan la logística. Ahora, aplicarán esto. Formen sus equipos de proyecto de **2 personas**. Construirán un sistema RFID con su Micro:bit (IOTbit) y etiquetas."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ideación y Definición de la "Vibe" en Equipo</h3>
+                            <p>El equipo diseña una intención para un "Sistema de Identificación y Trazabilidad Simple" con lector RFID, describiéndola a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Su misión es diseñar una 'vibe' para un 'Control de Inventario de Herramientas'. El Micro:bit con sensor RFID (RC522 vía SPI) detectará etiquetas. Al leer una, LED verde (P1) encenderá y el UID se enviará a ThingSpeak (field1). Si la misma etiqueta se detecta de nuevo, no enviará UID hasta que se retire. Si no hay etiqueta, LED verde apagará y Micro:bit mostrará 'Esperando Tag'. Queremos un registro de UIDs en ThingSpeak para saber qué herramientas se 'movieron'. Describan su idea a Xolo."</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Generación de Código por IA</h3>
+                            <p>(Proyectar Diapositiva 8) Xolo genera el esqueleto de código Python para el control de inventario de herramientas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Xolo generará el esqueleto de código Python. Lo que se muestra a continuación es el tipo de código que Xolo generaría para esta lógica. Su tarea es analizarlo."</p>
+<pre>
+# Importaciones necesarias
+
+from network import WLAN, STA_IF
+
+from machine import Pin, SPI # SPI para RC522
+
+import urequests
+
+import time
+
+from iotit import * # Para usar display, LEDs
+
+# --- Importar la librería específica del sensor RC522 RFID ---
+# ¡¡NOTA IMPORTANTE: Deberán tener el archivo 'mfrc522.py' en la raíz de su Micro:bit!!
+# Este archivo es la librería que Xolo asume para interactuar con el RC522 via SPI.
+from mfrc522 import MFRC522
+
+# --- Configuración de la red Wi-Fi ---
+SSID = '[SSID_WIFI_CLASE]'
+PASSWORD = '[PASSWORD_WIFI_CLASE]'
+
+# --- Configuración de la API de SmartIOT.space (ThingSpeak-compatible) ---
+API_KEY = 'YOUR_THINGSPEAK_WRITE_API_KEY'
+CHANNEL_ID = 'YOUR_THINGSPEAK_CHANNEL_ID'
+THINGSPEAK_URL = 'http://api.thingspeak.com/update'
+
+# Definir pin para LED de confirmación
+led_verde_confirmacion = Pin(Pin.P1, Pin.OUT) # LED verde en P1 de la IOTbit
+
+# --- Configuración SPI para RC522 (adaptar a pines de IOTbit si es diferente) ---
+# Pines SPI en Micro:bit: MISO=P16, MOSI=P15, SCK=P14. RST y CS deben definirse.
+# Asumo que IOTbit tiene mapeo o se usan pines libres para RST y CS.
+# Generalmente: MISO=P16, MOSI=P15, SCK=P14, RST=P13, CS=P4 (ejemplo común)
+spi = SPI(1, baudrate=1000000, polarity=0, phase=0, bits=8, firstbit=SPI.MSB,
+            sck=Pin(14), mosi=Pin(15), miso=Pin(16))
+# Definir pines CS (Chip Select) y RST (Reset) para el RC522
+sck = Pin(14)
+mosi = Pin(15)
+miso = Pin(16)
+rst = Pin(13) # Pin de reset del RC522
+cs = Pin(4)  # Pin Chip Select del RC522
+rfid = MFRC522(spi, cs, rst)
+
+# --- Variable de estado para gestionar el envío de IDs únicos (solo una vez por detección) ---
+uid_leido_anteriormente = None # Almacena el último UID leído para evitar re-envíos
+
+# --- Función para conectar a Wi-Fi (reutilizada) ---
+def connect_wifi():
+    wlan = WLAN(STA_IF)
+    wlan.active(True)
+    if not wlan.isconnected():
+        print('Intentando conectar a Wi-Fi...')
+        display.scroll("WIFI...")
+        wlan.connect(SSID, PASSWORD)
+        timeout = 0
+        while not wlan.isconnected() and timeout < 30:
+            display.show(Image.ASLEEP)
+            time.sleep_ms(300)
+            display.clear()
+            time.sleep_ms(300)
+            timeout += 1
+    if wlan.isconnected():
+        print('Conexión Wi-Fi exitosa:', wlan.ifconfig())
+        display.scroll("CONECTADO")
+        return True
+    else:
+        print('Fallo la conexión Wi-Fi.')
+        display.scroll("WIFI ERROR")
+        return False
+
+# --- Función para enviar un dato a ThingSpeak (reutilizada para UID) ---
+def send_uid_to_thingspeak(uid_hex_str, field_num=1):
+    try:
+        # ThingSpeak puede tener problemas con caracteres especiales. urequests.quote codifica el string.
+        url_with_params = THINGSPEAK_URL + '?api_key=' + API_KEY + '&field' + str(field_num) + '=' + urequests.quote(uid_hex_str)
+
+        print(f"Enviando UID: {uid_hex_str}")
+        display.scroll("UID...")
+        response = urequests.get(url_with_params)
+
+        if response.status_code == 200:
+            print("UID enviado exitosamente.")
+            display.show(Image.CHECK)
+            time.sleep_ms(300)
+            display.clear()
+            return True
+        else:
+            print(f"Error UID. Código: {response.status_code} Mensaje: {response.text}")
+            display.show(Image.X)
+            time.sleep(1)
+            display.clear()
+            return False
+    except Exception as e:
+        print(f"Excepción al enviar UID: {e}")
+        display.show(Image.SAD)
+        time.sleep(1)
+        display.clear()
+        return False
+
+# --- Bucle principal del programa ---
+if connect_wifi():
+    display.scroll("Lector ON!")
+    time.sleep(1)
+
+    while True:
+        display.show(Image.ASLEEP) # Icono "Esperando Tag"
+        led_verde_confirmacion.write_digital(0) # Apagar LED
+
+        (status, tag_type) = rfid.request(rfid.REQIDL) # Pide si hay etiqueta cerca
+
+        if status == rfid.OK:
+            (status, uid_raw) = rfid.SelectTag(uid_raw) # Lee el UID
+
+            if status == rfid.OK:
+                uid_hex = ''.join(['%02x' % i for i in uid_raw]).upper() # Convierte UID a formato hexadecimal
+                print(f"Tag detectado - UID: {uid_hex}")
+
+                if uid_hex != uid_leido_anteriormente: # Si es un nuevo tag o el mismo pero ya se retiró
+                    led_verde_confirmacion.write_digital(1) # Encender LED
+                    display.show(Image.YES) # Icono de confirmación
+                    send_uid_to_thingspeak(uid_hex, 1) # Enviar UID a ThingSpeak (field1)
+                    uid_leido_anteriormente = uid_hex # Actualizar el último UID leído
+                    time.sleep(1) # Pausa para evitar lecturas dobles en el mismo ciclo
+                else:
+                    print("Mismo Tag, no reenviado.")
+                    display.show(Image.HAPPY) # Icono de ya leído
+
+            else:
+                print("Error al leer Tag.")
+                display.show(Image.NO)
+        else:
+            # Si no hay tag detectado, y antes había uno, resetear la bandera
+            if uid_leido_anteriormente is not None:
+                print("Tag retirado. Reseteando estado.")
+                uid_leido_anteriormente = None # Resetear la bandera
+                # Opcional: enviar un mensaje a ThingSpeak de "Tag retirado"
+                # send_uid_to_thingspeak("Tag Retirado", 1)
+
+        time.sleep_ms(100) # Pequeña pausa para evitar sobrecargar el loop
+else:
+    print("El sistema se detuvo debido a un error de conexión Wi-Fi. Reinicie para intentar de nuevo.")
+    display.scroll("ERROR Fatal")
+</pre>
+<p><em><!-- NOTA PARA EL FACILITADOR: Este es el código que Xolo generará para el equipo. No debe ser leído directamente a la clase, sino usado como referencia para la siguiente fase de análisis. --></em></p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Análisis de Código Guiado ("Taming the Genie Lvl 2")</h3>
+                            <p>(Proyectar Diapositiva 9) El equipo analiza el código generado por Xolo, profundizando en su estructura y lógica.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Analicen el código. Pregúntenle a Xolo: <strong>'¿Cómo funciona el protocolo SPI (RC522) comparado con I2C o UART? ¿Por qué es más adecuado para este sensor?'</strong> También: <strong>'¿Cómo `uid_leido_anteriormente` evita enviar UIDs repetidamente si la etiqueta permanece frente al lector? ¿Por qué esta gestión de estado es esencial para la fiabilidad de datos en logística e IA?'</strong> Y: <strong>'¿Cómo la IA detecta anomalías (ej. herramientas perdidas o en ubicaciones inesperadas) usando UIDs?'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 5: Implementación y Debugging Colaborativo</h3>
+                            <p>(Proyectar Diapositiva 10) El equipo implementa el código en el Micro:bit y depura posibles errores con la asistencia de Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Ensamblen su 'Control de Inventario de Herramientas'. Conecten RC522 a pines SPI (P14 SCK, P15 MOSI, P16 MISO, P13 RST, P4 CS). Asegúrense de que `mfrc522.py` esté cargado. Copien el código, ajusten `API_KEY` y `CHANNEL_ID`. Carguen y prueben: presenten etiqueta, retiren y vuelvan a presentar, usen otra etiqueta. Observen reacción de LED y mensajes en ThingSpeak. Si la consola muestra 'ImportError: no module named mfrc522' o 'Error al leer Tag', depuren con Xolo. Si el mismo UID se envía repetidamente, pregunten: <strong>'¿Por qué se sigue enviando el mismo UID, inundando ThingSpeak?'</strong> La gestión de estados es crítica."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM (Reflexión en Equipo) ⏰ 5 minutos</h2>
+                <p>El facilitador modera la presentación de resultados y una reflexión final enfocada en el proceso colaborativo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: "Think" (Individual)</h3>
+                            <p>Instrucción para la reflexión individual sobre el proceso de aprendizaje.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Individualmente, piensen: 'Si cada producto que compran llevara un RFID rastreado por IA desde fábrica a casa, ¿cuáles serían los 3 mayores beneficios como consumidores? ¿Cuál sería el mayor riesgo ético o de privacidad?'"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: "Pair" (Parejas)</h3>
+                            <p>Instrucciones para la discusión en parejas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <p class="dialogue assistant">"Ahora, discutan sus reflexiones. Compartan beneficios y riesgos. ¿Un rastreo RFID/IA podría tener consecuencias inesperadas o no deseadas para la sociedad?"</p>
+                            </div>
+                        </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: "Share" (Grupo)</h3>
+                            <p>El facilitador invita a algunos equipos a compartir sus conclusiones con la clase.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <p class="dialogue assistant">"Algunos equipos, compartan sus conclusiones. ¿Qué visión tienen sobre el futuro de la trazabilidad y la privacidad?"</p>
+                            <p class="dialogue user"><strong>Equipo 1:</strong> "Beneficios: saber si un producto es auténtico, ver su caducidad, dónde ha estado. Riesgo: la empresa conoce mis productos y patrones de consumo, invadiendo la privacidad."</p>
+                            <p class="dialogue user"><strong>Equipo 2:</strong> "Beneficios: comida más segura, origen rastreable, devoluciones fáciles. Riesgo: información vendida a aseguradoras, subiendo primas si compro 'productos no saludables'."</p>
+                            <p class="dialogue user"><strong>Equipo 3:</strong> "Beneficios: devoluciones instantáneas sin recibos, stock perfecto. Riesgo: gobierno o corporaciones rastrean movimientos y compras sin consentimiento. ¿Y si se hackea la base de datos?"</p>
+                            </div>
+                        </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Síntesis Final</h3>
+                            <p>El facilitador cierra la sesión con una reflexión consolidada sobre el aprendizaje del día.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <p class="dialogue assistant">"Felicidades, equipo. Dominaron la identificación única con RFID, clave en Industria 4.0. Experimentaron la complejidad de protocolos seriales y gestión de estados para datos fiables. Conceptualizaron cómo la IA usa trazabilidad para optimizar logística, detectar fraudes y gestionar inventarios. Han sentado bases sólidas en la interacción hardware, el envío de datos a la nube y la conceptualización de cómo la IA usa diferentes tipos de datos. Módulo concluido. La próxima sesión, **MÓDULO 3: PLATAFORMAS PROFESIONALES Y GEMELOS DIGITALES**, explorará plataformas cloud robustas y 'réplicas digitales' de sistemas físicos."</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
