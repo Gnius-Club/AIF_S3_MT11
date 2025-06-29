@@ -38,10 +38,11 @@
                 <li><a href="#activity-2">2</a></li>
                 <li><a href="#activity-3">3</a></li>
                 <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
             </ul>
 
             <div class="sidebar-info">
-                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>💡 Esta misión se centra en la tecnología RFID y sus aplicaciones en logística y control de acceso.</p>
                 <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
             </div>
         </aside>
@@ -71,19 +72,22 @@
                                     <strong>Objetivos:</strong>
                                     <ul>
                                         <li>Que los estudiantes integren un lector RFID y comprendan su funcionamiento.</li>
-                                        <li>Que diseñen un proyecto libre que utilice la identificación única de objetos para control de acceso o logística simple.</li>
-                                        <li>Que comprendan cómo la IA utiliza los datos de RFID para la optimización de cadenas de suministro.</li>
+                                        <li>Que entiendan el rol de RFID en la logística, trazabilidad y control de acceso.</li>
+                                        <li>Que diseñen un proyecto libre que utilice la identificación única de objetos.</li>
+                                        <li>Que conceptualicen cómo la IA utiliza datos de RFID para optimizar cadenas de suministro.</li>
                                     </ul>
                                     <strong>Secuencia de Clase:</strong>
                                     <ul>
-                                        <li><strong class="tactic-highlight">⚡A.I. GYM:</strong> Exploración de la tecnología RFID y su aplicación en la logística optimizada por IA.</li>
-                                        <li><strong class="tactic-highlight">⚡BRAIN SPARK (DISEÑO LIBRE):</strong> Ideación, Vibe Coding, e implementación de un sistema de identificación.</li>
-                                        <li><strong class="tactic-highlight">⚡GNIUS STORM:</strong> Showcase de proyectos y reflexión sobre la tecnología de identificación y sus implicaciones éticas.</li>
+                                        <li><strong class="tactic-highlight">⚡A.I. GYM:</strong> Análisis profundo y contextualización de la misión con Xolo.</li>
+                                        <li><strong class="tactic-highlight">⚡VIBE CODING:</strong> Diseño de la intención y generación de código por IA.</li>
+                                        <li><strong class="tactic-highlight">⚡ANÁLISIS DE CÓDIGO:</strong> Lectura y comprensión guiada del código generado ("Taming the Genie").</li>
+                                        <li><strong class="tactic-highlight">⚡IMPLEMENTACIÓN Y DEBUGGING:</strong> Pruebas de hardware/software y depuración colaborativa con Xolo.</li>
+                                        <li><strong class="tactic-highlight">⚡GNIUS STORM:</strong> Showcase de proyectos, síntesis de "insights" y reflexión iterativa.</li>
                                     </ul>
                                     <strong>Entregable Clave:</strong>
                                     <ul>
-                                        <li>Un proyecto funcional que lee el UID de una tarjeta RFID y toma una decisión lógica basada en si ese UID está "autorizado" en el código.</li>
-                                        <li>Código que demuestra el proceso de "descubrimiento" de UIDs y su posterior uso en una estructura condicional.</li>
+                                        <li>Un script funcional y original en MicroPython que lee el UID de una tarjeta RFID y ejecuta una acción condicional (ej. acceso permitido/denegado).</li>
+                                        <li>Comprensión demostrada del proceso de "descubrimiento" de UIDs y de la depuración de protocolos de comunicación como SPI o I2C.</li>
                                     </ul>
                                 </td>
                                 <td>
@@ -93,19 +97,21 @@
                                         <li>Conexión a internet estable.</li>
                                         <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>) en modo Python.</li>
                                         <li>Chat "Agente Gnius" (Xolo) operativo.</li>
-                                        <li>Presentación de diapositivas (Diapositivas 1-7).</li>
-                                        <li>Por equipo de 2: 1 Micro:bit v2 con placa IOTbit, 1 Lector RFID (ej. MFRC522), al menos 2-3 tarjetas o llaveros RFID, y cables de conexión.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-10).</li>
+                                        <li>1 Micro:bit v2 con placa IOTbit y cable USB por equipo de 2.</li>
+                                        <li>1 Lector RFID (ej. MFRC522) con cables y al menos 2 tarjetas/tags RFID por equipo.</li>
                                     </ul>
                                     <strong>Preparación Previa para ESTA Sesión:</strong>
                                     <ol>
                                         <li><strong>Verificación del Entorno Digital y Físico (Interna):</strong>
                                             <ul>
-                                                <li>Asegurar que los lectores RFID y las tarjetas están funcionales.</li>
-                                                <li>Verificar si el lector RFID requiere una librería específica en MakeCode y tenerla identificada.</li>
+                                                <li>Asegurar que los lectores RFID y las tarjetas estén funcionales.</li>
+                                                <li>Tener clara la conexión de pines (SPI o I2C) del lector a la IOTbit.</li>
+                                                <li>Verificar que la librería de Python necesaria para el lector esté disponible o sea fácil de importar en MakeCode.</li>
                                             </ul>
                                         </li>
-                                        <li><strong>Familiarización Conceptual y Técnica:</strong> Repasar el protocolo de comunicación del lector RFID (SPI o I2C) y el proceso de dos pasos: descubrir UIDs y luego usarlos. Estar preparado para guiar la depuración del cableado.</li>
-                                        <li><strong>Preparación de la Demostración Práctica:</strong> Tener un sistema de "control de acceso" funcional, incluyendo el script de "descubrimiento" de UIDs y el script principal, para demostrar el flujo de trabajo completo.</li>
+                                        <li><strong>Familiarización Conceptual y Técnica:</strong> Repasar el funcionamiento de RFID y los desafíos de la depuración de protocolos de comunicación. Estar preparado para guiar la discusión sobre logística y privacidad.</li>
+                                        <li><strong>Preparación de la Demostración Práctica:</strong> Tener un proyecto funcional de "control de acceso" y, crucialmente, un script simple de "descubrimiento de UID" para mostrar el primer paso indispensable.</li>
                                     </ol>
                                 </td>
                             </tr>
@@ -117,12 +123,12 @@
 
             <div class="activity-card" id="activity-1">
                 <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
-                <p>Establecer el tono de la sesión, activar la IA y presentar la tecnología de identificación RFID.</p>
+                <p>Establecer el tono de la sesión, activar la IA y presentar la tecnología RFID.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Bienvenida y Contexto de la Misión</h3>
-                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta la importancia de la identificación de objetos.</p>
+                            <h3>Paso 1: Bienvenida y Contexto Estratégico</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta el enfoque de la misión.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
@@ -134,12 +140,12 @@
                     <div class="step-card">
                         <div class="step-content">
                             <h3>Paso 2: Activación y Personalización de Xolo</h3>
-                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo individual con Xolo.</p>
+                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo individual.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Inicien su sesión con Xolo como es habitual, compartiendo su perfil de aprendizaje e interés. Por ejemplo: <strong>'Hola Xolo, soy Miguel, perfil Navigator, y me intriga cómo funcionan las cadenas de suministro globales. Listo para la Misión 11.'</strong></p>
+                                <p class="dialogue assistant">Inicien su sesión con Xolo como de costumbre, compartiendo su perfil de aprendizaje e interés. Por ejemplo: <strong>'Hola Xolo. Soy Mateo, perfil Navigator, y me intriga cómo funcionan las cadenas de suministro globales.'</strong> Esto preparará a su socio de IA para la sesión. Procedan.</p>
                             </div>
                         </div>
                     </div>
@@ -147,30 +153,18 @@
             </div>
 
             <div class="activity-card" id="activity-2">
-                <h2>⚡ Actividad 2: A.I. GYM (RFID y Logística con IA) ⏰ 10 minutos</h2>
-                <p>Construir el andamiaje conceptual sobre la tecnología RFID y su aplicación en la optimización logística por IA.</p>
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 2 minutos</h2>
+                <p>Clarificar la meta de aprendizaje enfocada en la identificación de objetos y sus aplicaciones.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Investigación sobre Tecnología RFID</h3>
-                            <p>(Proyectar Diapositiva 3) El facilitador dirige a los alumnos para que investiguen el funcionamiento de RFID.</p>
+                            <h3>Paso 1: "I Can Statement" de Identificación</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador presenta el objetivo de aprendizaje de la sesión.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Su investigación con Xolo hoy se centra en la identificación. De forma individual, comiencen con este prompt: <strong>'Xolo, ¿qué es RFID y cómo funciona el sistema de lector y etiqueta?'</strong></p>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: IA en la Cadena de Suministro</h3>
-                            <p>(Proyectar Diapositiva 4) El facilitador guía la siguiente consulta, enfocada en la aplicación de IA.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora, conectemos esto con la IA. Pregúntenle a Xolo: <strong>'¿Cómo usa la IA los datos de RFID para que los paquetes de Amazon lleguen más rápido?'</strong> Esto les mostrará el impacto a gran escala de la tecnología que tienen en sus manos.</p>
+                                <p class="dialogue assistant">La meta de hoy es dominar la identificación de objetos. Al finalizar esta sesión, podrán afirmar: <strong>'Yo puedo integrar un lector RFID para identificar objetos únicos y diseñar un sistema que utilice esa información para una aplicación de logística o seguridad.'</strong></p>
                             </div>
                         </div>
                     </div>
@@ -178,42 +172,30 @@
             </div>
 
             <div class="activity-card" id="activity-3">
-                 <h2>⚡ Actividad 3: Brain Spark (Diseño de Sistemas de Identificación) ⏰ 22 minutos</h2>
-                <p>Los estudiantes diseñan, implementan y depuran un proyecto creativo basado en la identificación por RFID.</p>
+                <h2>⚡ Actividad 3: A.I. GYM (RFID y Logística con IA) ⏰ 10 minutos</h2>
+                <p>Facilitar una sesión de aprendizaje sobre la tecnología RFID y su uso en la optimización logística con IA.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Presentación del Desafío y Formación de Parejas</h3>
-                             <p>(Proyectar Diapositiva 5) El facilitador presenta el desafío de diseño libre.</p>
+                            <h3>Paso 1: Instrucción para el Aprendizaje Conceptual</h3>
+                            <p>(Proyectar Diapositiva 4 y 5) El facilitador dirige a los alumnos para que aprendan sobre RFID y su conexión con la IA.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora, su misión como ingenieros de logística y seguridad. Formen sus parejas. Su desafío es diseñar un proyecto **libre** que utilice el lector RFID. Pueden crear un sistema de control de acceso, un registro de inventario, un sistema de 'check-in' para objetos, o un juego interactivo. El concepto es suyo.</p>
+                                <p class="dialogue assistant">Iniciamos el A.I. GYM. Su aprendizaje con Xolo hoy es doble. Primero, pregunten: <strong>'Xolo, ¿qué es RFID y cómo funciona?'</strong> Una vez que entiendan la tecnología, exploren su aplicación en la IA: <strong>'Ahora, explícame cómo la IA utiliza los datos de RFID para que los paquetes lleguen más rápido.'</strong></p>
                             </div>
                         </div>
                     </div>
-                    <div class="step-card">
+                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 2: Descubrimiento de UIDs y Vibe Coding</h3>
-                            <p>(Proyectar Diapositiva 6) Las parejas primero descubren los UIDs de sus tarjetas y luego diseñan su vibe.</p>
+                            <h3>Paso 2: Supervisión y Guía del Facilitador</h3>
+                            <p>El facilitador circula, refuerza conceptos y sugiere preguntas de profundización.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                 <p class="dialogue assistant">Para este proyecto, el primer paso es siempre un 'programa de descubrimiento'. Pídanle a Xolo una vibe para un script que simplemente lea y muestre en la consola el UID de cualquier tarjeta que acerquen. Una vez que tengan los UIDs de sus tarjetas, pueden definir su 'vibe' principal, como por ejemplo: <strong>'Xolo, vibe de control de acceso: si el UID leído es igual a nuestro UID autorizado, abrir una cerradura (servo). Si no, encender un LED rojo.'</strong></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Implementación y Depuración de Protocolo</h3>
-                             <p>(Proyectar Diapositiva 7) Las parejas implementan el código y enfrentan desafíos de hardware y comunicación.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                 <p class="dialogue assistant">Implementen su sistema. La comunicación con un lector RFID puede ser delicada. Si el lector no detecta nada, no asuman que el código está mal. Es muy probable que sea un problema de hardware. Describan el problema a Xolo: <strong>'Xolo, el lector RFID no detecta nuestras tarjetas.'</strong> Él los guiará para revisar sistemáticamente el cableado del protocolo (SPI o I2C), la librería de Python y la distancia entre la tarjeta y el lector."</p>
+                                <p class="dialogue assistant">(Mientras circula) "La idea de que la IA obtiene 'visibilidad total' del inventario es poderosa. Para profundizar, pregúntenle a Xolo: <strong>'¿Qué tipo de 'anomalía' podría detectar una IA en un almacén usando RFID, además de un producto en el lugar equivocado?'</strong> O, <strong>'¿Cuál es la principal ventaja de RFID sobre un simple código de barras en este contexto?'</strong>"</p>
                             </div>
                         </div>
                     </div>
@@ -221,42 +203,85 @@
             </div>
 
             <div class="activity-card" id="activity-4">
-                <h2>⚡ Actividad 4: Gnius STORM (Reflexión sobre Identificación y Ética) ⏰ 5 minutos</h2>
-                <p>El facilitador modera una reflexión final enfocada en las ventajas y riesgos de la tecnología RFID.</p>
+                 <h2>⚡ Actividad 4: Brain Spark (Sistemas de Identificación) ⏰ 22 minutos</h2>
+                <p>Los estudiantes diseñan, implementan y depuran un proyecto original basado en la identificación por RFID.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Gnius STORM (Think - Individual)</h3>
-                            <p>Los alumnos reflexionan individualmente sobre las ventajas y desventajas de RFID.</p>
+                            <h3>Paso 1: Presentación del Desafío y Formación de Parejas</h3>
+                             <p>(Proyectar Diapositiva 6) El facilitador presenta el desafío de diseño libre y da la instrucción de formar parejas.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Vamos a nuestro cierre. Primero, un minuto de reflexión individual. Piensen: ¿cuáles son las ventajas y desventajas de la tecnología RFID en comparación con un simple código de barras?</p>
+                                <p class="dialogue assistant">Ahora, a su misión como ingenieros de logística y seguridad. Formen sus parejas. Su misión es diseñar un proyecto **libre** que utilice el lector RFID. Pueden crear un sistema de control de acceso, un registro de inventario, un sistema de 'check-in' para objetos, o un juego interactivo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Descubrimiento de UIDs y Diseño de la "Vibe"</h3>
+                            <p>(Proyectar Diapositiva 7) Las parejas primero descubren los UIDs de sus tarjetas y luego diseñan su sistema.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Su primer paso técnico es crucial: necesitan saber la identidad de sus tarjetas. Pídanle a Xolo una 'vibe' para un 'programa de descubrimiento de UIDs'. Este script simple solo leerá y mostrará en la consola el UID de cualquier tarjeta que acerquen. Una vez que tengan los UIDs, diseñen la 'vibe' de su proyecto principal y colaboren con Xolo para el código. Por ejemplo: <strong>'Xolo, queremos un sistema de acceso. Si se lee el UID "0x1A2B3C4D", se abre una cerradura. Si se lee cualquier otro, suena una alarma.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Implementación y Depuración de Protocolos</h3>
+                             <p>(Proyectar Diapositiva 8 y 9) Las parejas implementan su sistema, enfrentando los desafíos de la comunicación SPI/I2C.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Implementen su proyecto. La comunicación con el lector RFID es delicada y requiere que todos los pines estén conectados perfectamente. Si el lector no detecta nada, es casi seguro un problema de hardware. Describan el problema a Xolo. Por ejemplo: <strong>'Xolo, nuestro lector no detecta ninguna tarjeta.'</strong> Él los guiará por el protocolo de depuración: verificar cada cable de la conexión SPI o I2C, asegurar que la librería correcta está importada, y comprobar la distancia de la tarjeta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM (Reflexión) ⏰ 5 minutos</h2>
+                <p>El facilitador modera una reflexión final enfocada en las aplicaciones y las implicaciones éticas de la tecnología RFID.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM (Think - Individual)</h3>
+                            <p>(Proyectar Diapositiva 10) Instrucción para la reflexión individual.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Bien, para cerrar, nuestro Think-Pair-Share. Individualmente, un minuto para pensar: ¿Cuáles son las ventajas y desventajas del RFID comparado con un simple código de barras?</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
                             <h3>Paso 2: Gnius STORM (Pair - Parejas)</h3>
-                            <p>Los alumnos discuten en parejas las implicaciones de privacidad de la tecnología RFID.</p>
+                            <p>Los alumnos discuten las implicaciones de privacidad de la tecnología RFID.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora, en parejas, una discusión ética importante. Discutan las implicaciones de privacidad de que los objetos que compramos o llevamos encima lleven etiquetas RFID que podrían ser leídas sin nuestro conocimiento. ¿Dónde están los beneficios y dónde los riesgos? Tienen dos minutos.</p>
+                                <p class="dialogue assistant">Ahora, en parejas, discutan durante dos minutos las implicaciones de privacidad de que los objetos que compramos lleven etiquetas RFID que podrían ser leídas sin nuestro conocimiento. ¿Qué problemas podría generar?</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
                             <h3>Paso 3: Gnius STORM (Share & Synthesis)</h3>
-                            <p>Algunas parejas comparten su proyecto y el facilitador cierra la sesión.</p>
+                            <p>Algunas parejas comparten sus proyectos y el facilitador cierra la sesión.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Escuchemos de algunas parejas. Compartan el sistema de identificación que diseñaron y qué lo hace útil o interesante. (Escuchar 2-3 respuestas). Excelente. Hoy han dominado la identificación de objetos, un pilar de la Industria 4.0. Han visto cómo dar una identidad única a los objetos permite un nivel de automatización y optimización sin precedentes. Esta habilidad es la base para la logística inteligente, el control de inventarios y la seguridad avanzada. En la próxima misión, cambiaremos de marcha y empezaremos a trabajar con actuadores y sistemas de control autónomo.</p>
+                                <p class="dialogue assistant">Escuchemos a algunas parejas. Compartan brevemente el sistema de identificación que diseñaron y qué lo hace útil o interesante. (Escuchar respuestas). Han dominado la identificación de objetos, un pilar de la Industria 4.0. Han visto cómo dar una identidad única a los objetos permite un nivel de automatización sin precedentes. Esta habilidad es la base para la logística inteligente y la seguridad avanzada. En la próxima misión, cambiaremos de marcha y empezaremos a trabajar con actuadores y sistemas de control autónomo.</p>
                             </div>
                         </div>
                     </div>
